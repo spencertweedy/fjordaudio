@@ -1,17 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		
-		<title>Fjord Audio</title>
+    <head>
+        <meta charset="utf-8">
+        <title>Fjord Audio</title>
+        <meta name="description" content="Workhorse recording equipment.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<!-- Typekit code -->
-		<script src="https://use.typekit.net/vcp6ikv.js"></script>
-		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+        <!-- Typekit code -->
+        <script src="https://use.typekit.net/vcp6ikv.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
-		<style>
-			/* CSS reset */
-			html, body, div, span, applet, object, iframe,
+        <style type="text/css">
+            html, body, div, span, applet, object, iframe,
             h1, h2, h3, h4, h5, h6, p, blockquote, pre,
             a, abbr, acronym, address, big, cite, code,
             del, dfn, em, img, ins, kbd, q, s, samp,
@@ -56,201 +56,168 @@
             }
 
             /* Begin styles */
-			body {
-				background: #fff;
-				color: #000;
-				font-family: 'jaf-facitweb', sans-serif;
-				font-size: 15px;
-				line-height: 2em;
-			}
 
-			h1 {
-				background: url(logo.png);
-				background-size: 38px 38px;
-				height: 38px;
-				width: 38px;
-				color: transparent;
-				font-size: 0;
-				margin-bottom: 60px;
-				position: absolute;
-				left: 0px;
-			}
+            body {
+                background: #000;
+                color: #fff;
+                font-family: "jaf-facitweb", sans-serif;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: ;
+                -webkit-font-smoothing: antialiased;
+            }
 
-			h2 {
-				margin-bottom: 20px;
-			}
+            h1 {
+                background: url(logo.png);
+                background-size: 80px 106px;
+                width: 80px;
+                height: 106px;
+                color: transparent;
+                font-size: 0;
+                margin: 0 auto 40px;
+            }
 
-			h2 img {
-				margin-right: 3px;
-				height: 11px;
-			}
+            h2 {
+                font-family: 'Sutro', Georgia, serif;
+                font-size: 55px;
+                font-weight: 500;
+                margin: 0 auto 23px;
+            }
 
-			a {
-				color: #000;
-				text-decoration: underline;
-			}
+            a {
+                color: #888;
+                text-decoration: underline;
+            }
 
-			p {
+            label[for="mce-EMAIL"] {
+                display: none;
+            }
 
-			}
+            input[type="email"] {
+                background: none;
+                border: none;
+                outline: none;
+                width: 360px;
+                height: 60px;
+                font-size: 35px;
+                font-family: 'jaf-facitweb';
+                color: #fff;
+                margin: 60px auto 35px;
+            }
 
-			img {
-				max-width: 100%;
-			}
+            input[type="submit"] {
+                background: #68AE00;
+                outline: none;
+                border: none;
+                border-radius: 4px;
+                margin: 0;
+                padding: 12px 21px 11px;
+                cursor: pointer;
+                font-size: 20px;
+                font-weight: 700;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                color: #fff;
+                font-family: 'jaf-facitweb';
+            }
 
-			label[for="mce-EMAIL"] {
-				display: none;
-			}
+            input::placeholder {
+                color: #646464;
+            }
 
-			input[type="email"] {
-				background: none;
-				border: none;
-				border-bottom: 4px solid #000;
-				outline: none;
-				width: 400px;
-				height: 60px;
-				font-size: 1.2em;
-				margin-bottom: 40px;
-				font-family: 'jaf-facitweb';
-			}
+            footer {
+                color: #444;
+                font-size: 14px;
+                line-height: 1.5em;
+            }
 
-			input[type="submit"] {
-				background: #51C213;
-				font-size: 0.9em;
-				outline: none;
-				border: none;
-				margin: 0;
-				border-radius: 2px;
-				padding: 8px 16px;
-				color: #fff;
-				cursor: pointer;
-				font-family: 'jaf-facitweb';
-				text-transform: uppercase;
-				letter-spacing: 2px;
-			}
+            footer a {
+                color: #444;
+            }
 
-			input[type="checkbox"] {
-				margin-right: 7px;
-				position: relative;
-				top: -1px;
-			}
+            #wrapper {
+                margin: 120px auto;
+                width: 750px;
+                text-align: center;
+            }
 
-			input::placeholder {
-				color: #888;
-			}
+            .subtitle {
+                font-size: 20px;
+                font-weight: 700;
+                letter-spacing: 4px;
+                color: #ddd;
+                text-transform: uppercase;
+            }
 
-			footer {
-				font-size: 0.9em;
-				line-height: 1.8em;
-				margin-top: 60px;
-				color: #888;
-			}
+            .feature-photo {
+                width: 500px;
+                transform: rotate(-2deg);
+                border-radius: 4px;
+                margin: 75px auto;
+                animation: swell 2s ease-out infinite;
+                box-shadow: -2px 2px 60px #111;
+            }
 
-			footer a {
-				color: #888;
-			}
+            .smiley {
+                font-size: 30px;
+                color: #fff;
+                margin-top: 20px;
+                display: block;
+            }
 
-			#wrapper {
-				width: 540px;
-				padding: 0 0 0 98px;
-				margin: 120px auto;
-				position: relative;
-			}
+            @keyframes swell {
+                0% { transform: scale(1) rotate(-2deg); }
+                50% { transform: scale(1.015) rotate(-2deg); }
+                100% { transform: scale(1) rotate(-2deg); }
+            }
+        </style>
 
-			img.banner {
-				border-radius: 8px;
-				margin-bottom: 40px;
-			}
+        <!-- Google Analytics code -->
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-			label.role-selector-label {
-				font-size: 1em;
-				margin-bottom: 5px;
-				display: block;
-			}
+          ga('create', 'UA-102425167-1', 'auto');
+          ga('send', 'pageview');
 
-			ul.role-selector {
-				column-count: 3;
-				-webkit-column-count: 3;
-				column-gap: 10px;
-				-webkit-column-gap: 10px;
-				margin-bottom: 40px;
-				font-size: 0.9em;
-				border: 1px dashed #aaa;
-				padding: 10px 20px;
-				width: 358px;
-			}
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <h1>Fjord Audio</h1>
+            <h2>Workhorse studio gear.</h2>
+            <div class="subtitle">Launching October 10</div>
 
-			/* Breakpoints */
+            <!-- Begin MailChimp Signup Form -->
+            <div id="mc_embed_signup">
+                <form action="//audio.us7.list-manage.com/subscribe/post?u=be58663a738e69f01b03e256c&amp;id=9fe14367ae" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                        <div class="mc-field-group">
+                            <label for="mce-EMAIL" class="email-label">Email Address </label>
+                            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your email address…" autofocus>
+                        </div>
+                        
+                        <div id="mce-responses" class="clear">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div><!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_be58663a738e69f01b03e256c_9fe14367ae" tabindex="-1" value=""></div>
+                        <div class="clear"><input type="submit" value="Sign up &rarr;" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                    </div>
+                </form>
+            </div>
+            <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+            <!--End mc_embed_signup-->
 
-			@media screen and (max-width: 638px) {
-				h1 {
-					position: static;
-				}
+            <img src="feature_photo.jpg" class="feature-photo" />
 
-				#wrapper {
-					width: 540px;
-					padding: 0 20px;
-					margin: 80px auto;
-				}
-			}
-		</style>
-		
-		<!-- Google Analytics code -->
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-		  ga('create', 'UA-102425167-1', 'auto');
-		  ga('send', 'pageview');
-
-		</script>
-	</head>
-	<body>
-		<div id="wrapper">
-			<h1>Fjord Audio</h1>
-
-			<img class="banner" src="banner.jpg" />
-
-			<h2><img src="wordmark.png" /> is an audio products design company. We’re making tools for recording and performing music. We’re about to launch our first products, and we’d like you to be the first to know about them.</h2>
-
-			<!-- Begin MailChimp Signup Form -->
-			<div id="mc_embed_signup">
-				<form action="//audio.us7.list-manage.com/subscribe/post?u=be58663a738e69f01b03e256c&amp;id=9fe14367ae" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-				    <div id="mc_embed_signup_scroll">
-						<div class="mc-field-group">
-							<label for="mce-EMAIL" class="email-label">Email Address </label>
-							<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your email address…" autofocus>
-						</div>
-
-						<div class="mc-field-group input-group">
-						    <label class="role-selector-label">You are a/an…</label>
-						    <ul class="role-selector">
-						    	<li><input type="checkbox" value="1" name="group[13641][1]" id="mce-group[13641]-13641-0"><label for="mce-group[13641]-13641-0">Engineer</label></li>
-								<li><input type="checkbox" value="2" name="group[13641][2]" id="mce-group[13641]-13641-1"><label for="mce-group[13641]-13641-1">Producer</label></li>
-								<li><input type="checkbox" value="4" name="group[13641][4]" id="mce-group[13641]-13641-2"><label for="mce-group[13641]-13641-2">Podcaster</label></li>
-								<li><input type="checkbox" value="8" name="group[13641][8]" id="mce-group[13641]-13641-3"><label for="mce-group[13641]-13641-3">Musician</label></li>
-								<li><input type="checkbox" value="16" name="group[13641][16]" id="mce-group[13641]-13641-4"><label for="mce-group[13641]-13641-4">Other</label></li>
-							</ul>
-						</div>
-						
-						<div id="mce-responses" class="clear">
-							<div class="response" id="mce-error-response" style="display:none"></div>
-							<div class="response" id="mce-success-response" style="display:none"></div>
-						</div><!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-					    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_be58663a738e69f01b03e256c_9fe14367ae" tabindex="-1" value=""></div>
-					    <div class="clear"><input type="submit" value="Sign up &rarr;" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-				    </div>
-				</form>
-			</div>
-			<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-			<!--End mc_embed_signup-->
-
-			<footer>
-				<a href="mailto:hello@fjord.audio">hello@fjord.audio</a><br />
-				(773) 888-4152
-			</footer>
-		</div>
-	</body>
+            <footer>
+                <a href="mailto:hello@fjord.audio">hello@fjord.audio</a><br />
+                <a href="sms:1-773-800-4152">(773) 888-4152</a><br />
+                <span class="smiley">☺</span>
+            </footer>
+        </div>
+    </body>
 </html>
